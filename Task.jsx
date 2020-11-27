@@ -1,0 +1,1 @@
+const Task = ({ children }) => <div className="task">{children}</div>

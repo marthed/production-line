@@ -1,0 +1,87 @@
+div {
+  font-family: sans-serif;
+}
+@media (min-width: 250px) {
+  .flexParent {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+  }
+}
+.sidebar {
+}
+.mainContent {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+.debug {
+  border-style: solid;
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  padding: 100;
+}
+.spinnerImg {
+  height: 50%;
+}
+.searchResults {
+  position: relative;
+  height: 95%;
+  overflow: auto;
+}
+.searchResult {
+  display: inline-block;
+  text-align: center;
+  width: 200;
+  vertical-align: top;
+  padding: 5px;
+}
+.dishName {
+  width: 150px;
+  text-align: left;
+}
+.dishType {
+  width: 40px;
+  text-align: left;
+}
+.dishPrice {
+  width: 80px;
+  text-align: right;
+}
+.dishRemove {
+  width: 20px;
+}
+.hidden {
+  display: none;
+}
+.navigationButton {
+  float: right;
+}
+
+.task {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  color: red;
+  cursor: move;
+  padding: 0 6px;
+  margin: 2px 6px;
+}
+.line {
+  float: left;
+  width: 80%;
+  height: 23px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.lineLabel {
+  float: left;
+  width: 40px;
+  padding: 3px 0px;
+}
