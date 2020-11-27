@@ -24,8 +24,9 @@
         {from("Task t").orderBy("t.startDate").map(data => <tr>
           <td><input type="text" value={data("t.customer")} size="10"></input></td>
           <td>{data("t.line.name")}</td>
-          <td>{data("t.startDate")}</td>
+          <td>{ new Date(data("t.startDate")).toDateString()}</td>
           <td><input type="text" value={data("t.days")}></input></td>
+          <td>{new Date(data("dateAdd(t.startDate, t.days, 'day')")).toDateString()}</td>
           </tr>
         )}
 
