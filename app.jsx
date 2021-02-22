@@ -4,11 +4,11 @@
     {from("ProductionLine l").map(
       data => 
         <ProductionLine key={data("l.name")} name={data("l.name")} >
-          {from("Task t").where("t.line=l").map(data => <Task key={data("t.customer")}>{data("t.customer")}</Task>)}
+          {from("Task t").where("t.line=l").map(data => <Task id={data("t.id")} key={data("t")}>{data("t.customer")}</Task>)}
           </ProductionLine>
     )}
     <ProductionLine name="Park">
-      {from("Task t").where("t.line=nil").map(data => <Task data={data("t.customer")}>{data("t.customer")}</Task>)}
+      {from("Task t").where("t.line=nil").map(data => <Task id={data("t.customer")} key={data("t.customer")}>{data("t.customer")}</Task>)}
     </ProductionLine>
     <table style={{borderSpacing: "18px", borderCollapse: "separate"}}>
       <thead>
